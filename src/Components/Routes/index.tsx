@@ -6,6 +6,8 @@ import { ImageSlider } from '../Cadastro/ImageSlider';
 import Video from '../Home/Videos';
 import Layout from '../Layout';
 import {SliderData }from '../Cadastro/SliderData'
+import { ImageSliderr } from '../Cadastro/TvBox/ImageSlider';
+import { SliderDataa } from '../Cadastro/TvBox/SliderData';
 const AppRoutes: React.FC = () => {
 
 
@@ -22,7 +24,7 @@ const AppRoutes: React.FC = () => {
     <Routes>
     <Route path="/"   element={<Video />} />
     <Route path="/ClaroTVHD"   element={<ImageSlider slides={SliderData}/>} />
-   
+    <Route path="/ClaroBOX"   element={<ImageSliderr slides={SliderDataa}/>} />
     </Routes> 
     </Layout>
 );

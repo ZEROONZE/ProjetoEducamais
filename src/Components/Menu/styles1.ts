@@ -21,9 +21,10 @@ const animate = keyframes`
 `;
 export const Nav = styled.div`
  background-color: #000;
- border-bottom: 1px solid #000;
+ 
   height: 70px;
   position: absolute;
+ 
   display: flex;
   width: 90px;
   justify-content: flex-start;
@@ -31,11 +32,11 @@ export const Nav = styled.div`
   transition: .2s;
   animation: ${animate} .5s;
   #btnMenu{ 
-    color:#000;
+    color:#fff;
     font-size: 40px;
     transition: .2s;
-    
-    
+    z-index: 400;
+    margin-left: 9rem;
     }
 
 
@@ -44,12 +45,13 @@ export const Nav = styled.div`
 `;
 export const NavIcon = styled(Link)`
   margin-left: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   transition: .2s;
+    
 `;
 
 
@@ -123,7 +125,7 @@ export const Container = styled.div<IContainerProps>`
        margin-left: -3px;
         ${props => !props.menuIsOpen && css`
         border: none;
-        border-bottom: 1px solid ${props => props.theme.colors.gray};
+        border-bottom: 0px solid ${props => props.theme.colors.gray};
         animation: ${animate};
         
         `};

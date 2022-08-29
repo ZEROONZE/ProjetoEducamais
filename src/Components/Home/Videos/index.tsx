@@ -1,4 +1,7 @@
 import React from 'react'
+import Card from '../Card';
+import Card2 from '../Card2';
+import Slider from '../Slider';
 
 import { Container } from './styles';
 
@@ -7,45 +10,15 @@ const Video = () => {
   return (
     <Container>
 
-      <div className='giff'>
-        <div className='giff-text'>
-        <h2 >Olá, Vendedor!</h2>
-        <br/>
-        
-        <div className='giff-text2'>
-        <p className='giff-text22'>Preparado para gerar mais contratos ?</p>
-        <div className='giff-text3'>
-        <p>Então vamos lá, aqui você vai aprender, cadastrar
-          <br/>Liberar pendências, criar endereço, 
-          <br/>e muito mais!
-          </p>
-          <h3/>
-          </div>
-          </div>
-        </div>
-      <img className='gif' src="https://media.baamboozle.com/uploads/images/127129/1620846298_154986_gif-url.gif" />
-
-      <div className='ranking'>
-        <div className='rankingChildren'>
-        <h1>MELHORES % CONTRATOS</h1>
-        <div className='ranking-img'>
-        
-        <img className='one' src="logoVia.png" width={110} style={{marginBottom: -90}} />
-        <div>
-        <img className='two'src="logoVia.png" width={120} style={{marginBottom: -20}} />
-        </div>
-        <img className='three' src="logoVia.png" width={100} style={{marginBottom: -135}} />
-        </div>
-        <img className='Class' src="ranking.png"  width={400}/>
-      </div>
-      </div>
-      </div>
-      
+      <Slider />
+      <Card />
+      <Card2 />
+    
     <div className='header'> 
     <div className='cards'>
       <div  className='textP'>
     
-    <h1 className='titutoVr' >SE LIGA NESSA DICA PARA GERAR MAIS CONTRATOS</h1>
+      <h1 className='titutoVr' >COMO CRIAR ENDEREÇO</h1>
 <p className='titutoVw' >Pergunte ao cliente se sua residência é de esquina ou
 não, isso nos ajuda a localizar seu endereço no Netsales.
 Verifique ruas paralelas caso não ache o endereço.

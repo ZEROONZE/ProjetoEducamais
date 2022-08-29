@@ -15,7 +15,7 @@ export const Grid = styled.div`
     grid-template-rows: 70px auto;
     grid-template-areas:
      'MH MH'
-     'AS CT';
+     'CT CT';
      height: 100vh;
      width: 100%;
     `;

@@ -30,7 +30,8 @@ if(!Array.isArray(slides) || slides.length <=0) {
 
 
   return (
-    <Container>
+    <Container>   
+        <div className='rowww'>
         <div className='Tutora'>
             <h1>Como cadastrar <strong>CLARO TV 4K</strong></h1>
         <img className='gif' src="https://media.baamboozle.com/uploads/images/127129/1620846298_154986_gif-url.gif" />
@@ -60,6 +61,7 @@ if(!Array.isArray(slides) || slides.length <=0) {
  
  
  </section>
+ </div>
  </Container>
   )
 }

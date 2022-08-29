@@ -24,9 +24,13 @@ opacity: 0;
 `;
 
 export const SidebarNav = styled.nav`
-margin-top: 40px;
+margin-top: 10px;
 padding: 12px;
-  background: #2b2f41;
+font-family: 'Roboto', sans-serif;
+
+  background: #11101D;
+  font-weight: 400;
+ 
   width: 250px;
   overflow-x: auto;
   height: 100vh;
@@ -35,9 +39,9 @@ padding: 12px;
   position: fixed;
   top: 0;
   animation: ${animate} .5s;
-  left: ${({ sidebar }) => (sidebar ? '0' : '0')};
+  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 350ms;
-  z-index: 10;
+  z-index: 20;
   ::-webkit-scrollbar{
   width: 10px;
 
@@ -47,9 +51,11 @@ padding: 12px;
   background-color:#fff;}
 
 ::-webkit-scrollbar-track {
-  
+
   background-color: #2b2f41;
 } 
+
+
 `;
 
 
@@ -59,9 +65,10 @@ const MenuBar = () => {
 
   return (
     <>
-       
+
+
       <IconContext.Provider  value={{ color: ''  }}   >
-   
+      
         <Nav>
           <NavIcon  to='#'>
             <FaIcons.FaBars id="btnMenu"  onClick={showSidebar} />
